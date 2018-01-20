@@ -7,7 +7,7 @@
 
     
 
-    <title>正则表达式入门笔记 | He who thinks wins</title>
+    <title>工具 | He who thinks wins</title>
     <meta name="author" content="Lin Xueyuan">
     
     <meta name="description" content="嗨，我是兮尘，全栈数据学徒。这里没有花俏艳丽的魔法，没有苍蛮霸道的斗气，有的，仅仅是繁衍到巅峰的代码！">
@@ -15,7 +15,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="正则表达式入门笔记"/>
+    <meta property="og:title" content="工具"/>
     <meta property="og:site_name" content="XiChen"/>
 
     
@@ -355,10 +355,6 @@
         <span class="breadcrumb">Current page(Categories)</span>
         
             
-    
-    
-    <a class="breadcrumb" href="/categories/Linux/">Linux</a>
-
 
         
 
@@ -374,12 +370,12 @@
             <div class="article-title">
                 
     
-        <h1>正则表达式入门笔记</h1>
+        <h1>工具</h1>
     
 
 
             </div>
-            <i class="fa fa-calendar"></i><time class="green-link-context" datetime="2017-05-19T22:43:00.000Z"><a href="/2017/05/20/2017-05-20-正则表达式入门/">2017-05-20</a></time>
+            <i class="fa fa-calendar"></i><time class="green-link-context" datetime="2018-01-20T09:44:07.087Z"><a href="/tools/index.html">2018-01-20</a></time>
 
             <span id="busuanzi_container_page_pv" class="read-times-container">
     <i class="fa fa-eye"></i>
@@ -387,120 +383,26 @@
 </span>
 
             
-    <div class="tags-row">
-        
-            <a href="/tags/Linux/" class="chip green lighten-1">Linux</a>
-        
-    </div>
-    
-
 
             <div class="toc green-link-context hide-on-med-and-down">
-    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#这是主要参考文献：正则表达式入门，本文只是做了修改以便于自己记忆。"><span class="section table-of-contents-text">这是主要参考文献：正则表达式入门，本文只是做了修改以便于自己记忆。</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#1-元字符-metacharater"><span class="section table-of-contents-text">1. 元字符 metacharater</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#2-限定"><span class="section table-of-contents-text">2. 限定</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#3-字符类"><span class="section table-of-contents-text">3. 字符类</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#4-分支条件"><span class="section table-of-contents-text">4.分支条件</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#5-分组"><span class="section table-of-contents-text">5. 分组</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#6-反义"><span class="section table-of-contents-text">6.反义</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#7-后向引用"><span class="section table-of-contents-text">7.后向引用</span></a></li><li class="section table-of-contents-item section table-of-contents-level-4"><a class="section table-of-contents-link" href="#8-零宽断言"><span class="section table-of-contents-text">8. 零宽断言</span></a></li></ol>
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#VPN『-没有VPN的程序员是不完整的-』"><span class="section table-of-contents-text">VPN『 没有VPN的程序员是不完整的 』</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#小神器『-我这么好用当然是要你来找到我啦-』"><span class="section table-of-contents-text">小神器『 我这么好用当然是要你来找到我啦 』</span></a></li><li class="section table-of-contents-item section table-of-contents-level-1"><a class="section table-of-contents-link" href="#命令行『-sexy-』"><span class="section table-of-contents-text">命令行『 sexy~ 』</span></a></li></ol>
 </div>
 
 
             <div class="entry green-link-context">
-                <hr>
-<h4 id="这是主要参考文献：正则表达式入门，本文只是做了修改以便于自己记忆。"><a href="#这是主要参考文献：正则表达式入门，本文只是做了修改以便于自己记忆。" class="headerlink" title="这是主要参考文献：正则表达式入门，本文只是做了修改以便于自己记忆。"></a>这是主要参考文献：<a href="https://deerchao.net/tutorials/regex/regex.htm" target="_blank" rel="noopener">正则表达式入门</a>，本文只是做了修改以便于自己记忆。</h4><hr>
-<h4 id="1-元字符-metacharater"><a href="#1-元字符-metacharater" class="headerlink" title="1. 元字符 metacharater"></a><strong>1. 元字符 metacharater</strong></h4><blockquote>
-<p><strong>\b</strong> 代表着单词的开头或者结尾，也就是单词的分界处；</p>
-<p><strong>.</strong> 匹配除了换行符以外的任意字符；</p>
-<p><strong>\d</strong> 匹配一位数字；</p>
-<p><strong>\s</strong> 匹配任意的空白符，包括空格，制表符，换行符，中文全角空格等；</p>
-<p><strong>\w</strong> 匹配字母或数字或下划线或者汉字等；</p>
-<p><strong>^</strong>  匹配字符串的开始；</p>
-<p><strong>$</strong>  匹配字符串的结束；</p>
-</blockquote>
-<hr>
-<p><strong>字符转义仍然是使用\</strong></p>
-<hr>
-<h4 id="2-限定"><a href="#2-限定" class="headerlink" title="2. 限定"></a><strong>2. 限定</strong></h4><blockquote>
-<p><strong>+</strong> 指定前面的内容可以连续重复1次或者更多次；</p>
-<p><strong>*</strong> 指定前面的内容可以连续重复任意次（包括0次)；</p>
-<p><strong>?</strong> 重复零次或者一次；</p>
-<p><strong>{n}</strong> 重复n次；</p>
-<p><strong>{n,1}</strong> 重复n次或者更多次；</p>
-<p><strong>{n,m}</strong> 重复n次到m次；</p>
-</blockquote>
-<hr>
-<h4 id="3-字符类"><a href="#3-字符类" class="headerlink" title="3. 字符类"></a><strong>3. 字符类</strong></h4><p><em>可以利用方括号来匹配所需字符，[acb]代表可以匹配abc其中的一个，所以<strong>[]只用来匹配没有元字符对应的字符集中的单个字符</strong></em> </p>
-<blockquote>
-<p>比如[0-9],就跟\d是完全一致的，也就是匹配单个数字</p>
-</blockquote>
-<hr>
-<h4 id="4-分支条件"><a href="#4-分支条件" class="headerlink" title="4.分支条件"></a><strong>4.分支条件</strong></h4><blockquote>
-<p>正则表达式分支条件示例：\d{5}-\d{4}|\d{5}</p>
-<p>这个例子含有一个小的tricky的地方，就是它说明了一个问题：<br><strong>用分支条件时，要注意各个条件的顺序</strong>。如果把这个表达式改为<strong>\d{5}|\d{5}-\d{4}</strong>，<br>那么就只会匹配五位的邮编以及9位邮编的前5位。</p>
-<p><strong>原因是匹配分支条件时，将会从左到右地测试每个条件，如果满足了某个分支的话，就不会再管其它条件。</strong> </p>
-</blockquote>
-<hr>
-<h4 id="5-分组"><a href="#5-分组" class="headerlink" title="5. 分组"></a><strong>5. 分组</strong></h4><p><em>上面所说的都是重复单个字符的方法，如果想要重复多个字符可以用小括号来指定子表达式（也叫作分组），这也是当我们需要（字符本身时需要对其进行转义的原因。</em></p>
-<blockquote>
-<p>(\d{1,3}.){3}\d{1,3}是一个简单的IP地址匹配表达式。要理解这个表达式，请按下列顺序分析它：\d{1,3}匹配1到3位的数字，(\d{1,3}.){3}匹配三位数字加上一个英文句号(这个整体也就是这个分组)重复3次，最后再加上一个一到三位的数字(\d{1,3})。</p>
-</blockquote>
-<hr>
-<h4 id="6-反义"><a href="#6-反义" class="headerlink" title="6.反义"></a><strong>6.反义</strong></h4><table>
-<thead>
-<tr>
-<th>代码语法</th>
-<th style="text-align:center">说明</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>\W</td>
-<td style="text-align:center">匹配任意不是字母、数字、下划线、汉字的字符</td>
-</tr>
-<tr>
-<td>\S</td>
-<td style="text-align:center">匹配任意不是空白符的字符</td>
-</tr>
-<tr>
-<td>\D</td>
-<td style="text-align:center">匹配任意非数字的字符</td>
-</tr>
-<tr>
-<td>\B</td>
-<td style="text-align:center">匹配不是单词开头或结束的位置</td>
-</tr>
-<tr>
-<td>[^x]</td>
-<td style="text-align:center">匹配除了x以外的任意字符</td>
-</tr>
-<tr>
-<td>[^aeiou]</td>
-<td style="text-align:center">匹配除了aeiou这几个字母以外的任意字符</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h4 id="7-后向引用"><a href="#7-后向引用" class="headerlink" title="7.后向引用"></a><strong>7.后向引用</strong></h4><p>使用小括号指定一个子表达式后，匹配这个子表达式的文本(也就是此分组捕获的内容）可以在表达式或者其它程序中作进一步的处理。默认情况下，每个分组会自动拥有一个组号，规则是：从左到右，以分组的左括号为标志，第一个出现的分组组号为1，第二个为2，以此类推。</p>
-<blockquote>
-<p>分组0对应整个正则表达式；</p>
-<p>实际上组号分配过程是要从左到右扫描两遍：第一遍只给未命名组分配，第二遍只给命名组分配–因此所有的命名组的组号都大于未命名组的组号；</p>
-<p>你可以使用(?:exp)这样的语法来剥夺一个分组对组号分配的参与权。</p>
-<p>\b(\w+)\b\s+\1\b可以用来匹配重复的单词，像go go, 或者kitty kitty。这个表达式首先是一个单词，也就是单词开始处和结束处之间的多于一个的字母或数字(\b(\w+)\b)，这个单词会被捕获到编号为1的分组中，然后是1个或几个空白符(\s+)，最后是分组1中捕获的内容（也就是前面匹配的那个单词）(\1)。</p>
-<p>你也可以自己指定子表达式的组名。要指定一个子表达式的组名，请使用这样的语法：(?<word>\w+)(或者把尖括号换成’也行：(?’Word’\w+)),这样就把\w+的组名指定为Word了。要反向引用这个分组捕获的内容，你可以使用\k<word>,所以上一个例子也可以写成这样：\b(?<word>\w+)\b\s+\k<word>\b。</word></word></word></word></p>
-</blockquote>
-<p><strong>常用分组语法：</strong></p>
-<p><a href="">待补充</a></p>
-<hr>
-<h4 id="8-零宽断言"><a href="#8-零宽断言" class="headerlink" title="8. 零宽断言"></a><strong>8. 零宽断言</strong></h4>
+                <h1 id="VPN『-没有VPN的程序员是不完整的-』"><a href="#VPN『-没有VPN的程序员是不完整的-』" class="headerlink" title="VPN『 没有VPN的程序员是不完整的 』"></a>VPN『 没有VPN的程序员是不完整的 』</h1><ul>
+<li><a href="https://github.com/getlantern/forum" target="_blank" rel="noopener">蓝灯</a></li>
+<li><a href="https://get.greenjsqcn.com/" target="_blank" rel="noopener">GreenVPN</a></li>
+</ul>
+<h1 id="小神器『-我这么好用当然是要你来找到我啦-』"><a href="#小神器『-我这么好用当然是要你来找到我啦-』" class="headerlink" title="小神器『 我这么好用当然是要你来找到我啦 』"></a>小神器『 我这么好用当然是要你来找到我啦 』</h1><ul>
+<li><a href="https://software.opensuse.org/download.html?project=home:colomboem&amp;package=dukto" target="_blank" rel="noopener">Dukto</a></li>
+</ul>
+<h1 id="命令行『-sexy-』"><a href="#命令行『-sexy-』" class="headerlink" title="命令行『 sexy~ 』"></a>命令行『 sexy~ 』</h1><ul>
+<li><a href="https://github.com/SpaceVim/SpaceVim" target="_blank" rel="noopener">SpaceVim</a></li>
+</ul>
+
                 
-<p class="green-link-context">
-    <a href="/2017/05/20/2017-9-18-python-require-install/" rel="next" title="python Tips">
-    Prev: python Tips
-  </a>
-</p>
 
-
-
-<p class="green-link-context">
-    <a href="/2017/05/19/2017-05-17-Problems-I-encountered-when-I-use-Arch-Linux/" rel="next" title="使用Arch Linux时出现的问题">
-    Next: 使用Arch Linux时出现的问题
-  </a>
-</p>
 
 
             </div>
